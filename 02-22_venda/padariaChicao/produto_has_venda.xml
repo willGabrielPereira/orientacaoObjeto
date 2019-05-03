@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Produto_has_venda><titulo>produto_has_venda</titulo><data>1 Sexta-feira de Março de 2019</data><prod_has_vend idVenda="0" idProduto="0"><qnt>1</qnt></prod_has_vend><prod_has_vend idVenda="1" idProduto="0"><qnt>1</qnt></prod_has_vend><prod_has_vend idVenda="1" idProduto="2"><qnt>1</qnt></prod_has_vend><prod_has_vend idVenda="1" idProduto="2"><qnt>1</qnt></prod_has_vend><prod_has_vend idVenda="2" idProduto="3"><qnt>2</qnt></prod_has_vend></Produto_has_venda>

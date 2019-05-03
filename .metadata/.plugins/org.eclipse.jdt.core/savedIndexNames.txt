@@ -1,0 +1,24 @@
+INDEX VERSION 1.131+C:\Users\willg\Desktop\BCC\3 fase\poo\.metadata\.plugins\org.eclipse.jdt.core
+3120434461.index
+1614496928.index
+1685859473.index
+1237086683.index
+1336590386.index
+293656145.index
+207263653.index
+475482410.index
+2133896090.index
+218972057.index
+2041963154.index
+539991903.index
+2617464484.index
+1241749259.index
+112830980.index
+240890132.index
+1557992716.index
+751749368.index
+4233714540.index
+2448881569.index
+3389269794.index
+3281931649.index
+96551162.index

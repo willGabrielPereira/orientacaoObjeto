@@ -1,0 +1,44 @@
+package contadorArray;
+
+public class Contador<T, E> {
+	private T[] array;
+	private E key;
+	
+	public Contador(T[] array, E key) {
+		this.array = array;
+		this.key = key;
+	}
+
+	public T[] getArray() {
+		return array;
+	}
+
+	public void setArray(T[] array) {
+		this.array = array;
+	}
+
+	public E getKey() {
+		return key;
+	}
+
+	public void setKey(E key) {
+		this.key = key;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Contador [array=");
+		builder.append(array);
+		builder.append(", key=");
+		builder.append(key);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	public int contar() {
+		for(T t : this.array) {
+			
+		}
+	}
+}

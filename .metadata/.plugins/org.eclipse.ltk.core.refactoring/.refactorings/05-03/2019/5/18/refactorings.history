@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;banana.Lbanana4&apos; to &apos;LBanana4&apos;&#x0D;&#x0A;- Original project: &apos;05-03&apos;&#x0D;&#x0A;- Original element: &apos;banana.Lbanana4&apos;&#x0D;&#x0A;- Renamed element: &apos;banana.LBanana4&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Lbanana4&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;banana{Lbanana4.java[Lbanana4" matchStrategy="1" name="LBanana4" qualified="false" references="true" similarDeclarations="false" stamp="1556889172677" textual="false" version="1.0"/>
+</session>

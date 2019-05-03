@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="logging/|servlet/|webapp/src/taglib/|client/|outlook/|webapp/src/classes/" kind="src" path="demo"/>
+	<classpathentry kind="src" path="demo/client"/>
+	<classpathentry kind="src" path="demo/logging"/>
+	<classpathentry kind="src" path="demo/outlook"/>
+	<classpathentry kind="src" path="demo/servlet"/>
+	<classpathentry kind="src" path="demo/webapp/src/classes"/>
+	<classpathentry kind="src" path="demo/webapp/src/taglib"/>
+	<classpathentry kind="lib" path="lib/dsn.jar"/>
+	<classpathentry kind="lib" path="lib/imap.jar"/>
+	<classpathentry kind="lib" path="lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="lib/pop3.jar"/>
+	<classpathentry kind="lib" path="lib/smtp.jar"/>
+	<classpathentry kind="lib" path="mail.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

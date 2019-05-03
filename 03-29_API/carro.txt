@@ -1,0 +1,14 @@
+id: 2014
+ano_modelo: 2014
+marca: Fiat
+name: Palio 1.0 ECONOMY Fire Flex 8V 4p
+veiculo: Palio 1.0 ECONOMY Fire Flex 8V 4p
+preco: R$ 23.585,00
+combustivel: Gasolina
+referencia: abril de 2019
+fipe_codigo: 001267-0
+key: palio-2014
+
+
+
+asfhliaugef
