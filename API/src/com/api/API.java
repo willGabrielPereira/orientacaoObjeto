@@ -13,7 +13,10 @@ import factory.FactoryVeiculo;
 import java.io.File;
 import java.util.ArrayList;
 
-public class API {
+import static com.google.gson.internal.bind.TypeAdapters.URL;
+
+public class
+API {
     private Factory f;
 
     private List<Marca> marcas;
@@ -25,20 +28,20 @@ public class API {
     private String idModelo;
     
     /**
-     * API de conexão e comunicação com WebService da tabela Fipe
+     * API de conexï¿½o e comunicaï¿½ï¿½o com WebService da tabela Fipe
      * 
-     * Para diminuir erros, busque Marca, Veículo, Modelo e Carro respectivamente
+     * Para diminuir erros, busque Marca, Veï¿½culo, Modelo e Carro respectivamente
      * 
-     * Cada função carregar ou limpa retorna valores,
-     * porém não é necessário recebê-las pois fica salvo na própria API
+     * Cada funï¿½ï¿½o carregar ou limpa retorna valores,
+     * porï¿½m nï¿½o ï¿½ necessï¿½rio recebï¿½-las pois fica salvo na prï¿½pria API
      * 
-     * Para pular até o carro(veículo final) basta setar as IDs que deseja
+     * Para pular atï¿½ o carro(veï¿½culo final) basta setar as IDs que deseja
      */
     public API() {}
 
     /**
-     * Testa a conexão com o webservice
-     * @return null caso não houver conexão, true caso houver
+     * Testa a conexï¿½o com o webservice
+     * @return null caso nï¿½o houver conexï¿½o, true caso houver
      */
     public boolean testeConexao() {
         try {
@@ -53,7 +56,7 @@ public class API {
 
     /**
      * Adquire as marcas da webService
-     * @return List Marca  (não é necessário recebê-la)
+     * @return List Marca  (nï¿½o ï¿½ necessï¿½rio recebï¿½-la)
      */
     public List<Marca> carregaMarcas() {
         if (testeConexao()) {
@@ -67,7 +70,7 @@ public class API {
 
     /**
      * Limpa a lista de marcas
-     * @return List Marca (não é necessário recebê-la)
+     * @return List Marca (nï¿½o ï¿½ necessï¿½rio recebï¿½-la)
      */
     public List<Marca> limpaMarcas() {
         f = new FactoryMarca();
@@ -76,9 +79,9 @@ public class API {
     }
 
     /**
-     * Adquire os veículos da webService
-     * @param marca necessário para saber qual marca é dona dos veículos em questão
-     * @return List Veiculo  (não é necessário recebê-la)
+     * Adquire os veï¿½culos da webService
+     * @param marca necessï¿½rio para saber qual marca ï¿½ dona dos veï¿½culos em questï¿½o
+     * @return List Veiculo  (nï¿½o ï¿½ necessï¿½rio recebï¿½-la)
      */
     public List<Veiculo> carregaVeiculos(Marca marca) {
         if (testeConexao() && marca != null) {
@@ -92,8 +95,8 @@ public class API {
     }
 
     /**
-     * Limpa a lista de veículos
-     * @return List Veiculo  (não é necessário recebê-la)
+     * Limpa a lista de veï¿½culos
+     * @return List Veiculo  (nï¿½o ï¿½ necessï¿½rio recebï¿½-la)
      */
     public List<Veiculo> limparVeiculos() {
         f = new FactoryVeiculo();
@@ -103,8 +106,8 @@ public class API {
 
     /**
      * Adquire os modelos da webService
-     * @param veiculo necessário para saber de qual veículo os modelos são baseados
-     * @return List Modelo  (não é necessário recebê-la)
+     * @param veiculo necessï¿½rio para saber de qual veï¿½culo os modelos sï¿½o baseados
+     * @return List Modelo  (nï¿½o ï¿½ necessï¿½rio recebï¿½-la)
      */
     public List<Modelo> carregaModelos(Veiculo veiculo) {
         if (testeConexao() && veiculo != null) {
@@ -119,7 +122,7 @@ public class API {
 
     /**
      * Limpa a lista de modelos
-     * @return List Modelo  (não é necessário recebê-la)
+     * @return List Modelo  (nï¿½o ï¿½ necessï¿½rio recebï¿½-la)
      */
     public List<Modelo> limpaModelos() {
         f = new FactoryModelo();
@@ -129,8 +132,8 @@ public class API {
 
     /**
      * Adquire o carro da webService
-     * @param modelo necessário para saber sobre qual modelo o Carro foi produzido
-     * @return Carro (é necessário recebê-lo)
+     * @param modelo necessï¿½rio para saber sobre qual modelo o Carro foi produzido
+     * @return Carro (ï¿½ necessï¿½rio recebï¿½-lo)
      */
     public Carro carregaCarro(Modelo modelo) {
         if (testeConexao() && modelo != null) {
@@ -153,7 +156,7 @@ public class API {
     }
 
     /**
-     * gera um Json dos veículos salvos na API
+     * gera um Json dos veï¿½culos salvos na API
      * @param localArquivo File que contenha o local e nome do arquivo para salvar
      * @return false caso tenha falhado, true caso seja completado
      */
@@ -174,7 +177,7 @@ public class API {
     
     /**
      * gera um Json do carro
-     * @param carro Objeto tipo Carro que deverá ser salvo
+     * @param carro Objeto tipo Carro que deverï¿½ ser salvo
      * @param localArquivo File que contenha o local e nome do arquivo para salvar
      * @return false caso tenha falhado, true caso seja completado
      */
