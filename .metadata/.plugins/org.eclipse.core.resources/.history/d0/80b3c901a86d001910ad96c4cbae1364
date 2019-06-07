@@ -1,5 +1,0 @@
-package contadorArray;
-
-public class Contador<T, E> {
-
-}

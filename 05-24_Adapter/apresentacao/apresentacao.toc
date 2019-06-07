@@ -1,0 +1,17 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Design Patterns Estruturais}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{O que resolvem}{4}{0}{1}
+\beamer@sectionintoc {2}{Adapter}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Como funciona}{7}{0}{2}
+\beamer@sectionintoc {3}{Defini\IeC {\c c}\IeC {\~a}o}{9}{0}{3}
+\beamer@sectionintoc {4}{Programando}{11}{0}{4}
+\beamer@subsectionintoc {4}{1}{Interfaces}{13}{0}{4}
+\beamer@subsectionintoc {4}{2}{Classes concretas}{14}{0}{4}
+\beamer@subsectionintoc {4}{3}{Factory}{15}{0}{4}
+\beamer@subsectionintoc {4}{4}{Main}{16}{0}{4}
+\beamer@subsectionintoc {4}{5}{Adapter em si}{17}{0}{4}
+\beamer@sectionintoc {5}{\IeC {\'A}gua em vinho}{19}{0}{5}
+\beamer@subsectionintoc {5}{1}{ICopoAgua}{20}{0}{5}
+\beamer@subsectionintoc {5}{2}{Vinho}{20}{0}{5}
+\beamer@subsectionintoc {5}{3}{Jesus}{21}{0}{5}
+\beamer@subsectionintoc {5}{4}{Factory}{21}{0}{5}

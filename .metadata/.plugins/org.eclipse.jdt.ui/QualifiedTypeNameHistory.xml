@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
-<fullyQualifiedTypeName name="javax.mail.Address"/>
-<fullyQualifiedTypeName name="javax.mail.Transport"/>
-<fullyQualifiedTypeName name="javax.mail.Message"/>
-<fullyQualifiedTypeName name="javax.mail.MessagingException"/>
-<fullyQualifiedTypeName name="java.net.PasswordAuthentication"/>
 <fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
 <fullyQualifiedTypeName name="bo.MarcaBo"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
@@ -50,14 +44,20 @@
 <fullyQualifiedTypeName name="carro.abs.AbsCarro"/>
 <fullyQualifiedTypeName name="library.Biblioteca"/>
 <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="DTOs.Veiculo"/>
 <fullyQualifiedTypeName name="DTOs.AnoModelo"/>
 <fullyQualifiedTypeName name="DTOs.VeiculoFinal"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="com.api.API"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="tomada.ITomadaCircular"/>
+<fullyQualifiedTypeName name="tomada.TomadaCircular"/>
+<fullyQualifiedTypeName name="tomada.ITomadaPlana"/>
+<fullyQualifiedTypeName name="tomada.TomadaPlana"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
