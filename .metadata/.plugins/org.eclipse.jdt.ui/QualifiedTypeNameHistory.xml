@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
-<fullyQualifiedTypeName name="bo.MarcaBo"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="aluno.FabricaAluno"/>
-<fullyQualifiedTypeName name="pessoa.Pessoa"/>
-<fullyQualifiedTypeName name="pessoa.IFactoryPessoa"/>
 <fullyQualifiedTypeName name="pessoa.FactoryPessoa_Mulher"/>
 <fullyQualifiedTypeName name="pessoa.FactoryPessoa_Homem"/>
 <fullyQualifiedTypeName name="factoryMethod.exercicios.funcionarios.IFuncionario"/>
@@ -58,6 +52,12 @@
 <fullyQualifiedTypeName name="tomada.TomadaPlana"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="rodrigo.MaquinaDeLavarFacade"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="pack.AlteraStringDecorator"/>
+<fullyQualifiedTypeName name="pack.CaixaAlta"/>
+<fullyQualifiedTypeName name="pack.StringModificador"/>
+<fullyQualifiedTypeName name="pack.AlteraString"/>
+<fullyQualifiedTypeName name="pack.SeparaCaracteres"/>
 </qualifiedTypeNameHistroy>
