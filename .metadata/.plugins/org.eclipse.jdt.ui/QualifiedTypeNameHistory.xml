@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="pessoa.FactoryPessoa_Mulher"/>
-<fullyQualifiedTypeName name="pessoa.FactoryPessoa_Homem"/>
-<fullyQualifiedTypeName name="factoryMethod.exercicios.funcionarios.IFuncionario"/>
-<fullyQualifiedTypeName name="factoryMethod.exercicios.funcionarios.IFactoryFuncionario"/>
-<fullyQualifiedTypeName name="factoryMethod.exercicios.funcionarios.FactoryFuncionario_Estagiario"/>
 <fullyQualifiedTypeName name="factoryMethod.exercicios.funcionarios.FactoryFuncionario_Limpeza"/>
 <fullyQualifiedTypeName name="factoryMethod.exercicios.funcionarios.FactoryFuncionario_Professor"/>
 <fullyQualifiedTypeName name="factoryMethod.exercicios.funcionarios.FactoryFuncionario"/>
@@ -52,7 +47,6 @@
 <fullyQualifiedTypeName name="tomada.TomadaPlana"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="rodrigo.MaquinaDeLavarFacade"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="pack.AlteraStringDecorator"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="pack.StringModificador"/>
 <fullyQualifiedTypeName name="pack.AlteraString"/>
 <fullyQualifiedTypeName name="pack.SeparaCaracteres"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+<fullyQualifiedTypeName name="java.lang.Class"/>
+<fullyQualifiedTypeName name="java.beans.MethodDescriptor"/>
+<fullyQualifiedTypeName name="tipoParametro"/>
+<fullyQualifiedTypeName name="reflection.TesteReflection"/>
 </qualifiedTypeNameHistroy>
