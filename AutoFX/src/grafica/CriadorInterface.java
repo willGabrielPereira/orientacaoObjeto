@@ -24,7 +24,7 @@ import reflection.Reflection;
  *
  * @author willg
  */
-public class CriadorInterface{
+public final class CriadorInterface{
     private static CriadorInterface ci;
     private static Reflection reflection;
     private List lista;
@@ -51,7 +51,7 @@ public class CriadorInterface{
             Parent root = FXMLLoader.load(getClass().getResource("../fxml/tela.fxml"));
             cena = new Scene(root);
         } catch (IOException ex) {
-            Logger.getLogger(CriadorPanel.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CriadorInterface.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     

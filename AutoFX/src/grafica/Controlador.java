@@ -22,7 +22,7 @@ import javafx.scene.layout.Pane;
  *
  * @author willg
  */
-public class Controlador implements Initializable{
+public final class Controlador implements Initializable{
 
     private CriadorInterface criador;
     private Object selecionado;

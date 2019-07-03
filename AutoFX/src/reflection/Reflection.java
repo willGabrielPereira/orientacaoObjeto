@@ -20,7 +20,8 @@ public class Reflection {
 
     public static Reflection getInstance(Class<?> classe) {
         if (reflection == null) {
-            return new Reflection(classe);
+            reflection = new Reflection(classe);
+            return reflection;
         } else {
             return reflection;
         }
