@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package grafica;
+package autoFX.grafica;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -18,10 +18,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
-import reflection.Reflection;
+import autoFX.reflection.Reflection;
 
 /**
- *
+ * Utilizado para o desenvolvimento da interface gráfica <br>
+ * Gera botões, Labels (legendas) e TextFields (entradas)
  * @author willg
  */
 public final class CriadorInterface{
@@ -32,6 +33,11 @@ public final class CriadorInterface{
     private Scene cena;
     private List<TextField> fields;
     
+    /**
+     * Singleton para o CriadorInterface, evitando disperdicio de memória e processador
+     * @param reflection Reflection que a interface utilizará
+     * @return CriadorInterface
+     */
     public static synchronized CriadorInterface getInstance(Reflection reflection){
         if(ci == null){
             ci = new CriadorInterface(reflection);
@@ -46,9 +52,12 @@ public final class CriadorInterface{
         lista = new ArrayList<>();
     }
     
+    /**
+     * Inicia a Scene (cena), usando o FXML padrão que gera toda a tela de fundo
+     */
     public void iniciaCena(){
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("../fxml/tela.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("tela.fxml"));
             cena = new Scene(root);
         } catch (IOException ex) {
             Logger.getLogger(CriadorInterface.class.getName()).log(Level.SEVERE, null, ex);
@@ -63,11 +72,19 @@ public final class CriadorInterface{
         return ci;
     }
 
+    /**
+     * Retorna lista dos objetos salvos
+     * @return List
+     */
     public List getLista() {
         return lista;
     }
     
-    
+    /**
+     * Gera as legendas e entradas de acordo com a classe recebida
+     * @param painelCad Pane ao qual será adicionada as legendas e entradas
+     * @return Pane possuindo label e textField de cada atributo
+     */
     public Pane criaCena(Pane painelCad){
         
         int layoutY = 42;
@@ -117,6 +134,9 @@ public final class CriadorInterface{
         return painelCad;
     }
     
+    /**
+     * Adquire os dados que estão dentro dos TextFields e logo adiciona à lista de objetos salvos
+     */
     public void pegaDados(){
         reflection.novoObjeto();
         for(int i=0; i<atributos.length; i++){
@@ -162,6 +182,10 @@ public final class CriadorInterface{
         lista.add(reflection.getObjeto());
     }
     
+    /**
+     * Carrega os dados para dentro dos TextFields a partir do objeto recebido
+     * @param obj Objeto que possui os dados
+     */
     public void carregaDados(Object obj){
         List<String> texto = new ArrayList<String>();
         for(Field f:atributos){
@@ -172,11 +196,18 @@ public final class CriadorInterface{
         }
     }
     
+    /**
+     * Remove objeto da lista
+     * @param obj Objeto a ser removido
+     */
     public void remover(Object obj){
         lista.remove(obj);
         limpaTextFields();
     }
     
+    /**
+     * Remove qualquer tipo de dado de dentro dos TextFields
+     */
     public void limpaTextFields(){
         for(TextField tf:fields){
             tf.setText("");

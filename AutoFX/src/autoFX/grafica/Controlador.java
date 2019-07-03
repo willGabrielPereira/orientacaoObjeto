@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package grafica;
+package autoFX.grafica;
 
 import java.net.URL;
 import java.util.List;
@@ -19,7 +19,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
 /**
- *
+ * Controlador da interface gráfica
  * @author willg
  */
 public final class Controlador implements Initializable{
@@ -46,6 +46,10 @@ public final class Controlador implements Initializable{
     @FXML
     private ListView listV;
 
+    /**
+     * Altera os dados do Objeto selecionado
+     * @param event clique do mouse
+     */
     @FXML
     void funcaoAlterar(ActionEvent event) {
         criador.pegaDados();
@@ -53,12 +57,20 @@ public final class Controlador implements Initializable{
         atualizaLista();
     }
 
+    /**
+     * Remove objeto selecionado
+     * @param event clique do mouse
+     */
     @FXML
     void funcaoRemover(ActionEvent event) {
         criador.remover(selecionado);
         atualizaLista();
     }
 
+    /**
+     * Salva Objeto
+     * @param event clique do mouse 
+     */
     @FXML
     void funcaoSalvar(ActionEvent event) {
         criador.pegaDados();
@@ -66,6 +78,10 @@ public final class Controlador implements Initializable{
         atualizaLista();
     }
 
+    /**
+     * Seleciona objeto ao clicá-lo na lista
+     * @param event clique do mouse
+     */
     @FXML
     void selecionarObjeto(MouseEvent event) {
         int index = listV.getSelectionModel().getSelectedIndex();
@@ -79,6 +95,9 @@ public final class Controlador implements Initializable{
         painelCad = criador.criaCena(painelCad);
     }
     
+    /**
+     * Atualiza a lista de objetos salvos
+     */
     public void atualizaLista(){
         List lista = criador.getLista();
         obsList = FXCollections.observableArrayList(lista);
