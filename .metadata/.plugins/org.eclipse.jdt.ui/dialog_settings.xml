@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\willg\Desktop\BCC\3 fase\poo\03-29_API\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="C:\Users\willg\Desktop\BCC\3 fase\poo\atvPatterns" key="org.eclipse.jdt.ui.last.external.project"/>
 	<item value="800,850" key="UserLibraryLoadSaveDialog.size"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
@@ -27,6 +27,17 @@
 		<item value="1067" key="DIALOG_HEIGHT"/>
 		<item value="548" key="DIALOG_X_ORIGIN"/>
 		<item value="11" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="137" key="DIALOG_X_ORIGIN"/>
+			<item value="101" key="DIALOG_Y_ORIGIN"/>
+		</section>
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
@@ -179,6 +190,9 @@
 		<item value="836" key="DIALOG_HEIGHT"/>
 		<item value="460" key="DIALOG_X_ORIGIN"/>
 		<item value="11" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>
