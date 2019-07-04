@@ -9,6 +9,12 @@ import autoFX.grafica.CriadorInterface;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import autoFX.reflection.Reflection;
+import java.io.File;
+import javafx.application.Platform;
+import javafx.event.EventHandler;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
+import javafx.stage.WindowEvent;
 
 /**
  * 
@@ -63,6 +69,22 @@ public final class AutoFX{
         stage.setScene(scene);
         stage.show();
         
+        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent t) {
+                FileChooser chooser = new FileChooser();
+                File local = chooser.showSaveDialog(stage);
+                System.out.println(local);
+                criador.salvarJson(local);
+
+                // Coloque aqui o código a ser executado ao fechar o sistema.
+
+                stage.close();
+                Platform.exit();
+                System.exit(0);
+            }
+        });
+        
         mostrando = true;
     }
 
@@ -89,6 +111,15 @@ public final class AutoFX{
             }
         }
     }
-
+    
+    /**
+     * Salva em arquivo JSON os objetos
+     * @param local diretório a ser guardado o arquivo
+     * @return true caso exito, false caso erro
+     */
+    public boolean salvaJson(File local){
+        return criador.salvarJson(local);
+    }
+    
 
 }
