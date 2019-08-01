@@ -13,6 +13,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import autoFX.AutoFX;
+import autoFX.grafica.CriadorInterface;
+import autoFX.reflection.Reflection;
+import java.io.File;
 import javafx.stage.Stage;
 import junit.framework.TestCase;
 
@@ -21,31 +24,6 @@ import junit.framework.TestCase;
  * @author willg
  */
 public class TesteAutoFX extends TestCase{
-    
-    private Stage stage;
-    private AutoFX autoFX;
-    
-    public TesteAutoFX() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-        stage = new Stage();
-        autoFX = AutoFX.getInstance(ClasseSimples.class, stage);
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
@@ -53,15 +31,18 @@ public class TesteAutoFX extends TestCase{
     // public void hello() {}
     
     @Test
-    public void testGetInstance(){
-        assertEquals(AutoFX.getInstance(ClasseSimples.class, stage), autoFX);
-    }
-    
-    @Test
-    public void testApresentarTela(){
-        assertEquals(stage, autoFX.getStage());
-        autoFX.apresentarTela();
-        assertEquals(stage, autoFX.getStage());
+    public void testPersistencia(){
+        Reflection r = Reflection.getInstance(ClasseSimples.class);
+        CriadorInterface c = CriadorInterface.getInstance(r);
+        ClasseSimples simples = new ClasseSimples();
+        simples.setInte(1);
+        simples.setPalav("teste");
+        c.getLista().add(simples);
+        simples = new ClasseSimples();
+        simples.setInte(2);
+        simples.setPalav("teste2");
+        c.getLista().add(simples);
+        assertTrue(c.salvarJson(new File("teste.json")));
     }
     
 }

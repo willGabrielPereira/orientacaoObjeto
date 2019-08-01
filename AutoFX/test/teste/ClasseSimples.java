@@ -11,13 +11,6 @@ package teste;
  */
 public class ClasseSimples {
     private int inte;
-    private double doub;
-    private float floa;
-    private long lon;
-    private short shor;
-    private byte byt;
-    private boolean boo;
-    private char carac;
     private String palav;
 
     public Integer getInte() {
@@ -26,62 +19,6 @@ public class ClasseSimples {
 
     public void setInte(Integer inte) {
         this.inte = inte;
-    }
-
-    public Double getDoub() {
-        return doub;
-    }
-
-    public void setDoub(Double doub) {
-        this.doub = doub;
-    }
-
-    public Float getFloa() {
-        return floa;
-    }
-
-    public void setFloa(Float floa) {
-        this.floa = floa;
-    }
-
-    public Long getLon() {
-        return lon;
-    }
-
-    public void setLon(Long lon) {
-        this.lon = lon;
-    }
-
-    public Short getShor() {
-        return shor;
-    }
-
-    public void setShor(Short shor) {
-        this.shor = shor;
-    }
-
-    public Byte getByt() {
-        return byt;
-    }
-
-    public void setByt(Byte byt) {
-        this.byt = byt;
-    }
-
-    public Boolean isBoo() {
-        return boo;
-    }
-
-    public void setBoo(Boolean boo) {
-        this.boo = boo;
-    }
-
-    public Character getCarac() {
-        return carac;
-    }
-
-    public void setCarac(Character carac) {
-        this.carac = carac;
     }
 
     public String getPalav() {
@@ -94,9 +31,7 @@ public class ClasseSimples {
 
     @Override
     public String toString() {
-        return "ClasseSimples{" + "inte=" + inte + ", doub=" + doub + ", floa=" + floa + ", lon=" + lon + ", shor=" + shor + ", byt=" + byt + ", boo=" + boo + ", carac=" + carac + ", palav=" + palav + '}';
+        return "ClasseSimples{" + "inte=" + inte + ", palav=" + palav + '}';
     }
-    
-    
     
 }
